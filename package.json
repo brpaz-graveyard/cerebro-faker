@@ -1,0 +1,26 @@
+{
+  "name": "cerebro-faker",
+  "description": "Cerebro plugin for generating fake data with Faker.js",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/brpaz/cerebro-faker"
+  },
+  "dependencies": {
+    "cerebro-tools": "^0.1.8",
+    "cerebro-ui": "^0.0.16",
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "cerebro-scripts": "0.0.19"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-plugin"
+  ],
+  "scripts": {
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test"
+  }
+}
