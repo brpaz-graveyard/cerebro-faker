@@ -1,5 +1,3 @@
-'use strict';
-
 const fakerService = require('./fakerService');
 const icon = require('../assets/icon.png');
 const PLUGIN_REGEXP = /faker\s(.*)/;
@@ -48,8 +46,9 @@ const fn = ({term, display, actions, settings}) => {
           id: item.key,
           title: item.label,
           icon: icon,
+          term: `${PLUGIN_KEYWORD} ${GENERATE_FLAG} ${item.key}`,
           onSelect: (event) => {
-            actions.replaceTerm(PLUGIN_KEYWORD + ` ${GENERATE_FLAG} ` + item.key)
+            actions.replaceTerm(`${PLUGIN_KEYWORD} ${GENERATE_FLAG} ${item.key}`)
             event.preventDefault();
           }
         });

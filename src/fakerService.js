@@ -1,4 +1,3 @@
-'use strict';
 
 const Faker = require('faker');
 const { memoize } = require('cerebro-tools');

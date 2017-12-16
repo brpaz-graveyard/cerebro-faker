@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @var {array}
  * List of available faker providers and configurations
